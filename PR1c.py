@@ -134,17 +134,12 @@ def main():
 	L2_NN.fit(X_test.T)
 	L2 = np.asarray(L2_NN.kneighbors(X_test.T))
 	
-	recall_levels = [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-	recall_levels = [0.5]
-	
-	#### PRINT K NEAREST NEIGBOURS
-	
-	tap = 0
+	ap = 0
 	
 	for test in range(0,200):
 	
 		query_label = Y_test[L2[1][test][0].astype(int)]
-		print("Query label:",query_label)
+		print("Query label:",query_label, end="\r")
 		
 		max_precision_list = []
 		precision_list = []
@@ -155,13 +150,13 @@ def main():
 			relevant = 0
 			
 			for i in range (1,K+1):
-				index = L2[1][0][i].astype(int)
+				index = L2[1][test][i].astype(int)
 				query_result = Y_test[index]
 				
 				if query_label == query_result:
 					relevant = relevant + 1
 				
-			recall = np.round((relevant/9),1)
+			recall = np.round((relevant/9),3)
 			precision = np.round((relevant/K),3)
 				
 			recall_list.append(recall)
@@ -173,92 +168,24 @@ def main():
 		results['Recall'] = recall_list
 		results['Precision'] = precision_list 
 		
-		#print(results.head(60),'\n')
-		
 		recall_level_list = []
 		max_precision_list = []
-		for recall_level in np.linspace(0.0,1.0,11):
+		for recall_level in np.linspace(0.0,1.0,9):
 			precision_at_rec = []
 			precisions = results[results['Recall']>=recall_level]['Precision']
 			max_precision = max(precisions)
 			
 			max_precision_list.append(max_precision)
 			recall_level_list.append(np.round(recall_level,1))
-			#print(max_precision)
-		
-		#avg_prec_df = pd.DataFrame()
-		#avg_prec_df['Recall'] = recall_level_list
-		#avg_prec_df['Max Precision'] = max_precision_list
 		
 		avg_precision = np.mean(max_precision_list)
 		
-		tap = tap + avg_precision
-		
-		#print(np.mean(max_precision_list),'\n')
-		
-		
-		#plot_df(avg_prec_df,plot_title='Interp Prec',x_axis='Recall',y_axis='Interp Prec',plot='yes',save='no')
+		ap = ap + avg_precision
 	
-	map = tap/200
-	print(tap)
+	map = ap/200
+	print("  					")
 	print(map)
-		#sys.exit()			
-	'''
-		if recall == recall_level:
-			precision_list.append(precision)
-		
-		if recall > recall_level:
-			if len(precision_list) == 0:
-				
-				print(len(precision_list))
-				break
-		
-		
-		df = pd.DataFrame()
-		df['Recall'] = recall_list
-		df['Precision'] = precision_list 
-		print(df.head(50))
-		
-		for recall_level in np.linspace(0.0,1.0,11):
-			print(recall_level)
-		
-		
-		sys.exit()
-		#max_precision = max(precision_list)
-		#max_precision_list.append(max_precision)
-	#print(max_precision_list)
-	sys.exit()	
-	
-	
-	
-	print(knn)
-	print("Precision at rank",K,"=",np.round((relevant/K),3))
-	print("Recall at rank",K,"=",np.round((relevant/9),3))
-	
-	sys.exit()
-	
-	#### SORT QUERY FROM LOWEST TO HIGHEST
-	idx = euclidian_distance_array.argsort()[::1]
-	euclidian_distance_array = euclidian_distance_array[idx]
-	query_results = image_label_list[idx]
-	
-	#### RETRIEVE TOP 'K' RESULTS
-	K = 10
-	relevant = 0
-	top_k_results = []
-	for i in range(0,K):
-		top_k_results.append(query_results[i])
-		if query_label == query_results[i]:
-			relevant = relevant + 1
-		print("Recall at rank",K,"=",np.round((relevant/9),2))
-		
-	sys.exit()	
-	print(relevant)
-	print(euclidian_distance_array,'\n')
-	print(query_results,'\n')
-	print("Precision at rank",K,"=",np.round((relevant/K),3))
-	print("Recall at rank",K,"=",np.round((relevant/9),2))
-	'''
+
 	return 0
 	
 main()
