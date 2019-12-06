@@ -193,7 +193,7 @@ def main():
 	test_datas = [original_test.T, norm_test.T]
 	train_datas = [original_train.T, norm_train.T]
 	test_name = ['Original', 'Norm']
-	M_pca_list = [16,20,40,60,80,100,120]
+	M_pca_list = [16,32,64,128,256]
 	Y_test2 = list(range(0, 200))
 	
 	recall_levels = 11
