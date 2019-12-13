@@ -1,0 +1,89 @@
+#Clusters: 32 , L2 mAP: 0.241 ,Acc@1: 0.57 ,Acc@10: 0.775
+#Clusters: 32 , L1 mAP: 0.241 ,Acc@1: 0.58 ,Acc@10: 0.78
+#Clusters: 32 , Linf mAP: 0.156 ,Acc@1: 0.23 ,Acc@10: 0.59
+#Clusters: 32 , cosine mAP: 0.258 ,Acc@1: 0.605 ,Acc@10: 0.805
+#Clusters: 32 , corr mAP: 0.254 ,Acc@1: 0.605 ,Acc@10: 0.8
+
+
+#Clusters: 33 , L2 mAP: 0.252 ,Acc@1: 0.55 ,Acc@10: 0.73
+#Clusters: 33 , L1 mAP: 0.249 ,Acc@1: 0.505 ,Acc@10: 0.75
+#Clusters: 33 , Linf mAP: 0.173 ,Acc@1: 0.225 ,Acc@10: 0.62
+#Clusters: 33 , cosine mAP: 0.265 ,Acc@1: 0.53 ,Acc@10: 0.76
+#Clusters: 33 , corr mAP: 0.262 ,Acc@1: 0.53 ,Acc@10: 0.76
+
+
+#Clusters: 34 , L2 mAP: 0.254 ,Acc@1: 0.595 ,Acc@10: 0.775
+#Clusters: 34 , L1 mAP: 0.249 ,Acc@1: 0.575 ,Acc@10: 0.78
+#Clusters: 34 , Linf mAP: 0.165 ,Acc@1: 0.195 ,Acc@10: 0.67
+#Clusters: 34 , cosine mAP: 0.263 ,Acc@1: 0.6 ,Acc@10: 0.805
+#Clusters: 34 , corr mAP: 0.264 ,Acc@1: 0.6 ,Acc@10: 0.81
+
+
+#Clusters: 35 , L2 mAP: 0.245 ,Acc@1: 0.555 ,Acc@10: 0.755
+#Clusters: 35 , L1 mAP: 0.239 ,Acc@1: 0.51 ,Acc@10: 0.735
+#Clusters: 35 , Linf mAP: 0.167 ,Acc@1: 0.195 ,Acc@10: 0.635
+#Clusters: 35 , cosine mAP: 0.257 ,Acc@1: 0.54 ,Acc@10: 0.755
+#Clusters: 35 , corr mAP: 0.255 ,Acc@1: 0.54 ,Acc@10: 0.755
+
+
+#Clusters: 36 , L2 mAP: 0.21 ,Acc@1: 0.5 ,Acc@10: 0.725
+#Clusters: 36 , L1 mAP: 0.208 ,Acc@1: 0.49 ,Acc@10: 0.745
+#Clusters: 36 , Linf mAP: 0.145 ,Acc@1: 0.17 ,Acc@10: 0.67
+#Clusters: 36 , cosine mAP: 0.227 ,Acc@1: 0.52 ,Acc@10: 0.76
+#Clusters: 36 , corr mAP: 0.225 ,Acc@1: 0.52 ,Acc@10: 0.765
+
+
+#Clusters: 37 , L2 mAP: 0.246 ,Acc@1: 0.545 ,Acc@10: 0.755
+#Clusters: 37 , L1 mAP: 0.247 ,Acc@1: 0.505 ,Acc@10: 0.76
+#Clusters: 37 , Linf mAP: 0.173 ,Acc@1: 0.2 ,Acc@10: 0.645
+#Clusters: 37 , cosine mAP: 0.261 ,Acc@1: 0.56 ,Acc@10: 0.78
+#Clusters: 37 , corr mAP: 0.26 ,Acc@1: 0.56 ,Acc@10: 0.78
+
+
+#Clusters: 38 , L2 mAP: 0.228 ,Acc@1: 0.545 ,Acc@10: 0.76
+#Clusters: 38 , L1 mAP: 0.226 ,Acc@1: 0.54 ,Acc@10: 0.77
+#Clusters: 38 , Linf mAP: 0.155 ,Acc@1: 0.16 ,Acc@10: 0.665
+#Clusters: 38 , cosine mAP: 0.245 ,Acc@1: 0.56 ,Acc@10: 0.8
+#Clusters: 38 , corr mAP: 0.24 ,Acc@1: 0.56 ,Acc@10: 0.795
+
+
+#Clusters: 39 , L2 mAP: 0.226 ,Acc@1: 0.535 ,Acc@10: 0.72
+#Clusters: 39 , L1 mAP: 0.225 ,Acc@1: 0.555 ,Acc@10: 0.73
+#Clusters: 39 , Linf mAP: 0.164 ,Acc@1: 0.215 ,Acc@10: 0.67
+#Clusters: 39 , cosine mAP: 0.238 ,Acc@1: 0.555 ,Acc@10: 0.74
+#Clusters: 39 , corr mAP: 0.236 ,Acc@1: 0.555 ,Acc@10: 0.74
+
+
+#Clusters: 40 , L2 mAP: 0.237 ,Acc@1: 0.51 ,Acc@10: 0.69
+#Clusters: 40 , L1 mAP: 0.237 ,Acc@1: 0.5 ,Acc@10: 0.685
+#Clusters: 40 , Linf mAP: 0.175 ,Acc@1: 0.23 ,Acc@10: 0.6
+#Clusters: 40 , cosine mAP: 0.25 ,Acc@1: 0.51 ,Acc@10: 0.715
+#Clusters: 40 , corr mAP: 0.251 ,Acc@1: 0.515 ,Acc@10: 0.72
+
+
+#Clusters: 41 , L2 mAP: 0.214 ,Acc@1: 0.55 ,Acc@10: 0.695
+#Clusters: 41 , L1 mAP: 0.212 ,Acc@1: 0.525 ,Acc@10: 0.72
+#Clusters: 41 , Linf mAP: 0.143 ,Acc@1: 0.195 ,Acc@10: 0.655
+#Clusters: 41 , cosine mAP: 0.228 ,Acc@1: 0.54 ,Acc@10: 0.735
+#Clusters: 41 , corr mAP: 0.226 ,Acc@1: 0.55 ,Acc@10: 0.735
+
+
+#Clusters: 42 , L2 mAP: 0.198 ,Acc@1: 0.45 ,Acc@10: 0.69
+#Clusters: 42 , L1 mAP: 0.198 ,Acc@1: 0.45 ,Acc@10: 0.715
+#Clusters: 42 , Linf mAP: 0.137 ,Acc@1: 0.165 ,Acc@10: 0.6
+#Clusters: 42 , cosine mAP: 0.216 ,Acc@1: 0.485 ,Acc@10: 0.725
+#Clusters: 42 , corr mAP: 0.213 ,Acc@1: 0.485 ,Acc@10: 0.72
+
+
+#Clusters: 43 , L2 mAP: 0.227 ,Acc@1: 0.51 ,Acc@10: 0.74
+#Clusters: 43 , L1 mAP: 0.219 ,Acc@1: 0.45 ,Acc@10: 0.75
+#Clusters: 43 , Linf mAP: 0.162 ,Acc@1: 0.205 ,Acc@10: 0.655
+#Clusters: 43 , cosine mAP: 0.238 ,Acc@1: 0.495 ,Acc@10: 0.75
+#Clusters: 43 , corr mAP: 0.237 ,Acc@1: 0.495 ,Acc@10: 0.75
+
+
+#Clusters: 44 , L2 mAP: 0.241 ,Acc@1: 0.555 ,Acc@10: 0.79
+#Clusters: 44 , L1 mAP: 0.235 ,Acc@1: 0.54 ,Acc@10: 0.76
+#Clusters: 44 , Linf mAP: 0.158 ,Acc@1: 0.15 ,Acc@10: 0.66
+#Clusters: 44 , cosine mAP: 0.256 ,Acc@1: 0.565 ,Acc@10: 0.795
+#Clusters: 44 , corr mAP: 0.253 ,Acc@1: 0.565 ,Acc@10: 0.795
